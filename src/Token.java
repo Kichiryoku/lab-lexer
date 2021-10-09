@@ -1,7 +1,6 @@
 public class Token {
     private String token;
     Token(char ch) { token = String.valueOf(ch); }
-    Token(String s) { token = s; }
     Token() { token = ""; }
     void str2num() {
         System.out.printf("Number(%s)\n", token);
@@ -41,4 +40,5 @@ public class Token {
         System.out.println(res);
     }
     void tokenStrCat(char ch) { token = token.concat(String.valueOf(ch)); }
+    public int tokenSize() { return token.length(); }
 }

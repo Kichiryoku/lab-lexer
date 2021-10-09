@@ -28,7 +28,7 @@ public class Lexer {
                     else err = true;
                     break;
                 case 1:   // status is '=' or "=="
-                    if (ch == '=') { t.tokenStrCat('='); }
+                    if (ch == '=' && t.tokenSize() < 2) { t.tokenStrCat('='); }
                     else {
                         Status.stat = 0;
                         t.printChar();
