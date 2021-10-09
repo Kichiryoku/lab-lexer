@@ -4,11 +4,7 @@ public class Token {
     Token(String s) { token = s; }
     Token() { token = ""; }
     void str2num() {
-        int num = 0;
-        for (int i = 0; i < token.length(); ++i) {
-            num = num * 10 + (token.charAt(i) - '0');
-        }
-        System.out.printf("Number(%d)\n", num);
+        System.out.printf("Number(%s)\n", token);
     }
     void identOrReversed() {
         switch (token) {
