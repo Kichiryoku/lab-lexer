@@ -16,6 +16,7 @@ public class Code {
     void inputCode() {
         while (codeInput.hasNext()) {
             code = code.concat(codeInput.nextLine());
+            code = code.concat(String.valueOf('\n'));
         }
         size = code.length();
     }
