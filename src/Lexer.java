@@ -44,7 +44,7 @@ public class Lexer {
                     }
                     break;
                 case 3: // ident or reserved
-                    if (Status.isNonDigit(ch) || Status.isNonDigit(ch)) { t.tokenStrCat(ch); }
+                    if (Status.isNonDigit(ch) || Status.isDigit(ch)) { t.tokenStrCat(ch); }
                     else {
                         Status.stat = 0;
                         t.identOrReversed();
